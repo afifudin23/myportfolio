@@ -1,0 +1,120 @@
+/* Variable CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* ==== Colors ==== */
+    /* hsl: hue, saturation,. lightness */
+    
+    /* 
+
+        purple: hsl(250, 66%, 75%);
+        blue: hsl(207, 90%, 72%);
+        pink: hsl(356, 66%, 75%);
+        teal: hsl(174, 63%, 62%);
+
+    */
+
+    --first-hue:250;
+    --sat: 66%;
+    --lig: 75%;
+    --second-hue: 219;
+
+    --fist-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+    --title-color: hsl(var(--second-hue), 15%, 95%);
+    --text-color: hsl(var(--second-hue), 8%, 75%);
+    --tect-color-light: hsl(var(--second-hue), 4%, 55%);
+    --body-color: hsl(var(--second-hue), 48%, 8%);
+    --container-body: hsl(var(--second-hue), 32%, 12%);
+
+    /* ===== Font And Typhography */
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    --tinny-font-size: 0.625rem;
+
+    /* Font Weight */
+    --font-weight: 500;
+    --font-semibold: 600;
+
+    /* Z Index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+} 
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 968px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --biggest-font-size: 2.5rem;
+        --small-font-size: 0.875px;
+        --smaller-font-size: 0.813rem;
+    }
+    /* ==== Base ==== */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body,
+    button,
+    input,
+    textarea {
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+    }
+    body {
+        background-color: var(--body-color);
+        color: var(--text-color);
+    }
+    h1,
+    h2,
+    h3 {
+        color: var(--title-color);
+        font-weight: var(--font-semibold);
+    } 
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+
+    /* ==== Themes ==== */
+
+    /* ==== Variable Dark Themes ==== */
+
+    /* 
+    Color change in same parts of the website, in light theme 
+    */
+
+    /* ==== Reuseable CSS Classes ==== */
+    .container {
+        max-width: 968px;
+        margin: 0 1rem;
+    }
+    .grid {
+        display: grid;
+        gap: 1.25rem;
+    }
+}
