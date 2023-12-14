@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="">
 
     <!-- Icons / Boxicon -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,47 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/style.css">
     
-    <title>ANDEV</title>
+    <title>AnDev</title>
 </head>
 <body>
     <!-- ==== Header ==== -->
     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">AnDev</a>
 
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#user" class="nav_link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class='bx bx-code-alt'></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#work" class="nav_link">
+                            <i class='bx bx-book-reader' ></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class='bx bx-message-square-detail' ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
     </header>
 
     <!-- ==== Main ==== -->

@@ -19,7 +19,7 @@
     --lig: 75%;
     --second-hue: 219;
 
-    --fist-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
     --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
     --title-color: hsl(var(--second-hue), 15%, 95%);
     --text-color: hsl(var(--second-hue), 8%, 75%);
@@ -39,7 +39,7 @@
     --tinny-font-size: 0.625rem;
 
     /* Font Weight */
-    --font-weight: 500;
+    --font-medium: 500;
     --font-semibold: 600;
 
     /* Z Index */
@@ -47,6 +47,149 @@
     --z-fixed: 100;
     --z-modal: 1000;
 } 
+/* ==== Base ==== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+} 
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+img {
+    min-width: 100%;
+    height: auto;
+}
+
+/* ==== Themes ==== */
+
+/* ==== Variable Dark Themes ==== */
+
+/* 
+Color change in same parts of the website, in light theme 
+*/
+
+/* ==== Reuseable CSS Classes ==== */
+.container {
+    max-width: 968px;
+    margin: 0 1rem;
+}
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+.main {
+    overflow: hidden;
+}
+.section {
+    padding: 4.5rem 0 1rem;
+}
+.section_title,
+.section_subtitle {
+    text-align: center;
+}
+.section_title {
+    font-size: var(--h2-font-size);
+    color: var(--fist-color);
+    margin-bottom: 2rem;
+}
+.section_subtitle {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--tect-color-light);
+}
+
+/* ===== Header & Nav ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    
+}
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* LOGO */
+.nav_logo {
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    transition: 0.4s;
+}
+.nav_logo:hover {
+    color: var(--first-color-alt);
+}
+/* MENU */
+.nav_menu {
+    position: fixed;
+    bottom: 1rem;
+    background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
+    width: 90%;
+    border-radius: 4rem;
+    padding: 1rem 2.25rem;
+    backdrop-filter: blur(10px);
+}
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_link {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    padding: 0.4rem;
+    display: flex;
+    border-radius: 5rem;
+}
+.active-link {
+    background: linear-gradient(180deg,
+                hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                hsla(var(--first-hue), var(--sat), var(--lig), 0.2),
+            );
+}
+
+
+
+
+
+/* Active Link */
+/* Change Background Header */
+/* ===== HOME ===== */
+/* ===== BUTTON ===== */
+/* ===== ABOUT ===== */
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 968px) {
@@ -58,63 +201,5 @@
         --small-font-size: 0.875px;
         --smaller-font-size: 0.813rem;
     }
-    /* ==== Base ==== */
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    html {
-        scroll-behavior: smooth;
-    }
-    body,
-    button,
-    input,
-    textarea {
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-    }
-    body {
-        background-color: var(--body-color);
-        color: var(--text-color);
-    }
-    h1,
-    h2,
-    h3 {
-        color: var(--title-color);
-        font-weight: var(--font-semibold);
-    } 
-    ul {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-    }
-    button {
-        cursor: pointer;
-        border: none;
-        outline: none;
-    }
-    img {
-        min-width: 100%;
-        height: auto;
-    }
-
-    /* ==== Themes ==== */
-
-    /* ==== Variable Dark Themes ==== */
-
-    /* 
-    Color change in same parts of the website, in light theme 
-    */
-
-    /* ==== Reuseable CSS Classes ==== */
-    .container {
-        max-width: 968px;
-        margin: 0 1rem;
-    }
-    .grid {
-        display: grid;
-        gap: 1.25rem;
-    }
 }
+
