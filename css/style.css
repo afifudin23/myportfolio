@@ -177,8 +177,9 @@ Color change in same parts of the website, in light theme
 .active-link {
     background: linear-gradient(180deg,
                 hsla(var(--first-hue), var(--sat), var(--lig), 1),
-                hsla(var(--first-hue), var(--sat), var(--lig), 0.2),
+                hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
             );
+    box-shadow: 0 0 16px hsla(hsla(var(--first-hue), var(--sat), var(--lig), 0.4));
 }
 
 
@@ -188,6 +189,14 @@ Color change in same parts of the website, in light theme
 /* Active Link */
 /* Change Background Header */
 /* ===== HOME ===== */
+.home_container .home_handle {
+    display: block;
+    width: 250px;
+}
+.home_container .home_handle .home_img {
+    width: 100%;
+}
+
 /* ===== BUTTON ===== */
 /* ===== ABOUT ===== */
 
