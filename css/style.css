@@ -174,6 +174,8 @@ Color change in same parts of the website, in light theme
     display: flex;
     border-radius: 5rem;
 }
+
+/* Active Link */
 .active-link {
     background: linear-gradient(180deg,
                 hsla(var(--first-hue), var(--sat), var(--lig), 1),
@@ -182,18 +184,38 @@ Color change in same parts of the website, in light theme
     box-shadow: 0 0 16px hsla(hsla(var(--first-hue), var(--sat), var(--lig), 0.4));
 }
 
-
-
-
-
-/* Active Link */
 /* Change Background Header */
+
 /* ===== HOME ===== */
-.home_container .home_handle {
-    display: block;
-    width: 250px;
+.home_container {
+    position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem;
 }
-.home_container .home_handle .home_img {
+.home_data {
+    text-align: center;
+}
+.home_greeting,
+.home_education {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+.home_greeting {
+    display: block;
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+.home_education {
+    margin-bottom: 2.5rem;
+}
+.home_name {
+    font-size: var(--biggest-font-size);
+}
+.home_handle {
+    width: 160px;
+    justify-self: center;
+}
+.home_img {
     width: 100%;
 }
 
