@@ -206,21 +206,30 @@ Color change in same parts of the website, in light theme
     margin-bottom: 0.25rem;
 }
 .home_education {
+    color: var(--text-color);
     margin-bottom: 2.5rem;
 }
 .home_name {
     font-size: var(--biggest-font-size);
 }
-.home_handle {
-    width: 160px;
-    justify-self: center;
-}
 .home_img {
-    width: 100%;
+    width: 160px;
+    height: 320px;
+}
+.home_handle {
+    justify-self: center;
+    width: 200px;
+    height: 320px;
+    background: linear-gradient(180deg,
+                        hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                        hsla(var(--first-hue), var(--sat), var(--lig), .2)
+                    );
+    border-radius: 10rem 10rem 1rem 1rem;
 }
 
 /* ===== BUTTON ===== */
 /* ===== ABOUT ===== */
+/* ===== SKILLS ==== */
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 968px) {
