@@ -212,19 +212,19 @@ Color change in same parts of the website, in light theme
 .home_name {
     font-size: var(--biggest-font-size);
 }
-.home_img {
-    width: 160px;
-    height: 320px;
-}
 .home_handle {
     justify-self: center;
     width: 200px;
-    height: 320px;
+    height: 355px;
     background: linear-gradient(180deg,
                         hsla(var(--first-hue), var(--sat), var(--lig), 1),
                         hsla(var(--first-hue), var(--sat), var(--lig), .2)
                     );
     border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
 }
 
 /* ===== BUTTON ===== */
