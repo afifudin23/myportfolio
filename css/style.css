@@ -211,7 +211,7 @@ Color change in same parts of the website, in light theme
 }
 .home_name {
     font-size: var(--biggest-font-size);
-}
+}       
 .home_handle {
     justify-self: center;
     width: 200px;
@@ -226,6 +226,25 @@ Color change in same parts of the website, in light theme
     justify-content: center;
     overflow: hidden;
 }
+.home_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.home_social,
+.home_scroll {
+    position: absolute;
+}
+.home_social {
+    display: grid;
+    bottom: 7rem;
+    left: 0;
+    row-gap: 1rem;
+}
+
+
+
 
 /* ===== BUTTON ===== */
 /* ===== ABOUT ===== */
