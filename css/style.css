@@ -257,9 +257,48 @@ Color change in same parts of the website, in light theme
     color: #fff;
 }
 
-
-
+.home_social:after {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: var(--first-color);
+    transform: rotate(90deg) translate(16px, 4px);
+}
+.home_scroll {
+    color: var(--first-color);
+    right: -1.5rem;
+    bottom: 9rem;
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+}
+.home_scroll-icon {
+    font-size: 1.25rem;
+}
+.home_scroll-name {
+    font-size: var(--smaller-font-size);
+    transform: rotate(90deg);
+}
 /* ===== BUTTON ===== */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.4s;
+    border: 1px solid var(--first-color);
+}
+.button:hover {
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+}
+.button-ghost {
+    background-color: transparent;
+    color: var(--first-color);
+    box-sizing: border-box;
+}
 /* ===== ABOUT ===== */
 /* ===== SKILLS ==== */
 
