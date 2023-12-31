@@ -215,6 +215,9 @@ Color change in same parts of the website, in light theme
 }
 .home_name {
     font-size: var(--biggest-font-size);
+}
+.home_img {
+    width: 145px;
 }       
 .home_handle {
     justify-self: center;
@@ -338,7 +341,7 @@ Color change in same parts of the website, in light theme
     font-size: var(--tinny-font-size);
 }
 .about_description {
-    margin: 2rem;
+    margin: 2rem 1.5rem;
 }
 /* ===== SKILLS ==== */
 /* ===== SERVICES ===== */
