@@ -218,6 +218,7 @@ Color change in same parts of the website, in light theme
 }
 .home_img {
     width: 145px;
+    margin-left: 15px;
 }       
 .home_handle {
     justify-self: center;
@@ -230,7 +231,7 @@ Color change in same parts of the website, in light theme
     border-radius: 10rem 10rem 1rem 1rem;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: sp; */
     overflow: hidden;
 }
 .home_buttons {
