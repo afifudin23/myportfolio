@@ -187,7 +187,7 @@ Color change in same parts of the website, in light theme
 
 /* Change Background Header */
 .scroll-header {
-    /* box-shadow: 0 4px 4px hsla(0, 0, -4%, 0.3); */
+    box-shadow: 0 4px 4px hsla(0, 0, -4%, 0.3);
 }
 
 /* ===== HOME ===== */
