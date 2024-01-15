@@ -293,7 +293,7 @@ Color change in same parts of the website, in light theme
 /* ===== BUTTON ===== */
 .button {
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--first-color-alt);
     color: var(--body-color);
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
@@ -302,13 +302,16 @@ Color change in same parts of the website, in light theme
     border: 1px solid var(--first-color);
 }
 .button:hover {
-    background-color: var(--first-color-alt);
-    color: var(--body-color);
+    background-color: transparent;
+    color: var(--first-color);
 }
 .button-ghost {
     background-color: transparent;
     color: var(--first-color);
-    box-sizing: border-box;
+}
+.button-ghost:hover {
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
 }
 /* ===== ABOUT ===== */
 .about_container {
@@ -348,6 +351,49 @@ Color change in same parts of the website, in light theme
     margin: 2rem 1.5rem;
 }
 /* ===== SKILLS ==== */
+.skills_container {
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+.skills_content {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+}
+.skills_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.skills_box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+.skills_group {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+.skills_data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+.skills .bxs-badge-check{
+    font-size: 1rem;
+    color: var(--first-color);
+}
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+.skills_level {
+    font-size: var(--tinny-font-size);
+}
+
 /* ===== SERVICES ===== */
 
 /* Services Modal */
