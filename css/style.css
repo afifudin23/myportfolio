@@ -437,7 +437,7 @@ Color change in same parts of the website, in light theme
     place-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: 0.4s;
+    transition: 0.9s;
     z-index: var(--z-modal);
 
 }
