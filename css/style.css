@@ -544,7 +544,25 @@ Color change in same parts of the website, in light theme
 }
 
 /* ======= TESTIMONIALS ======= */
-
+.testimonial_card {
+    background-color: var(--container-color);
+    padding: 1.25rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+.testimonial_img {
+    width: 60px;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
+.testimonial_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem;
+}
+.testimonial_description {
+    font-size: var(--small-font-size);
+}
 /* Swiper Class */
 
 /* Responsive Breakpoint */
