@@ -51,7 +51,15 @@ function activeWork() {
 }
 workLink.forEach((wl) => wl.addEventListener("click", activeWork));
 // ============== SWIPER TESTIMONIAL ==============
-
+let swiperTestimonial = new Swiper(".testimonial_container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+);
 // ==============   SCROLL SELSI HFFL ==============
 
 // ============== SWIPER TESTIMONIAL ==============
