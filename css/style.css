@@ -549,11 +549,12 @@ Color change in same parts of the website, in light theme
     padding: 1.25rem 1.5rem;
     border-radius: 1.5rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .testimonial_img {
-    width: 60px;
+    width: 85px;
     border-radius: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .testimonial_name {
     font-size: var(--normal-font-size);
@@ -564,6 +565,12 @@ Color change in same parts of the website, in light theme
     font-size: var(--small-font-size);
 }
 /* Swiper Class */
+.swiper-pagination-bullet {
+    background-color: var(--text-color-light);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 968px) {

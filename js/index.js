@@ -59,7 +59,7 @@ let swiperTestimonial = new Swiper(".testimonial_container", {
         el: ".swiper-pagination",
         clickable: true,
     },
-);
+});
 // ==============   SCROLL SELSI HFFL ==============
 
 // ============== SWIPER TESTIMONIAL ==============
