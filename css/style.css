@@ -198,7 +198,6 @@ Color change in same parts of the website, in light theme
 .home_container {
     position: relative;
     row-gap: 4.5rem;
-    padding-top: 2rem;
 }
 .home_data {
     text-align: center;
@@ -660,7 +659,7 @@ Color change in same parts of the website, in light theme
     background-color:var(--first-color);
 }
 .footer_container {
-    padding: 2rem 0 6rem;
+    padding: 1.2rem 0 6rem;
 }
 .footer_title,
 a.footer_link {
@@ -668,13 +667,13 @@ a.footer_link {
 }
 .footer_title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.4rem;
 }
 .footer_list {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
 }
 .footer_social {
     display: flex;
@@ -691,7 +690,7 @@ a.footer_link {
 }
 .footer_copy {
     display: block;
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     color: var(--container-color);
     text-align: center;
     font-size: var(--smaller-font-size);
