@@ -696,9 +696,19 @@ a.footer_link {
     font-size: var(--smaller-font-size);
 }
 
-
 /* ======= SCROLL BAR ======= */
-
+::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: hsl(var(--second-hue), 8%, 25%);
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--second-hue), 8%, 60%);
+    border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--second-hue), 8%, 80%);
+}
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 968px) {
