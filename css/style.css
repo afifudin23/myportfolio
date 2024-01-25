@@ -571,6 +571,38 @@ Color change in same parts of the website, in light theme
 .swiper-pagination-bullet-active {
     background-color: var(--first-color);
 }
+/* ======= CONTACT ======= */
+.contact_container {    
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+}
+.contact_title {
+    text-align: center;
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+}
+.contact_info {
+    display: grid;
+    gap: 1rem;
+}
+.contact_card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+.contact_card-icon {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+.contact_card-title {
+    
+}
+/* ======= FOOTER ======= */
+
+/* ======= SCROLL BAR ======= */
+
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 968px) {
